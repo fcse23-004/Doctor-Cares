@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Cares |Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <!-- logo name  -->
+    <a href="index.html" class="logo"><span>D</span>octor <span>C</span>ares.</a>
+
+    <!-- navbar link  -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#doctor">doctor</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#blog">blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+</header>
+
+    <h1>Inventory Management</h1>
+
+
+  <div class="inventory-container">
+    <h2>Update Medication Stock</h2>
+    <form id="updateStockForm">
+      <label for="medicationName">Medication Name:</label>
+      <input type="text" id="medicationName" required>
+
+      <label for="stockLevel">Stock Level:</label>
+      <input type="number" id="stockLevel" required>
+
+      <button type="submit">Update Stock</button>
+    </form>
+
+    <h3>Current Inventory</h3>
+    <div id="inventoryList">
+      <!-- List of medications with stock levels -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

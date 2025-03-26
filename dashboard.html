@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Doctor Cares</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Dashboard Header -->
+  <header>
+          <!-- logo name  -->
+          <a href="index.html" class="logo"><span>D</span>octor <span>C</span>ares.</a>
+
+          <!-- navbar link  -->
+          <nav class="navbar">
+              <ul>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#doctor">doctor</a></li>
+                  <li><a href="#review">review</a></li>
+                  <li><a href="#contact">contact</a></li>
+                  <li><a href="#blog">blog</a></li>
+              </ul>
+          </nav>
+  
+          <div class="fas fa-bars"></div>
+  </header>
+  <section id="home" class="home">
+  <!-- Medication Search Section -->
+  <section class="medication-search">
+    <h2>Search Medication</h2>
+    <form id="searchForm">
+      <input type="text" id="searchQuery" placeholder="Search for medication..." required>
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="medicationResults" class="results">
+      <!-- Medication search results will be displayed here -->
+    </div>
+  </section>
+  </section>
+  <!-- Prescription Upload Section -->
+
+<h2>Upload Prescription</h2>
+<form id="uploadPrescriptionForm">
+  <input type="file" id="prescriptionFile" required>
+  <input type="date" id="collectionDate" required>
+  <button type="submit">Upload Prescription</button>
+</form>
+<div id="uploadStatus"></div>
+
+
+  <!-- Medication Stock Section -->
+  <section class="medication-stock">
+    <h2>Medication Stock Status</h2>
+    <div id="stockStatus">
+      <p>Loading stock information...</p>
+    </div>
+  </section>
+
+  <footer>
+      <!-- footer section start  -->
+
+      <section class="footer">
+
+        <div class="box">
+            <h2 class="logo"><span>D</span>octor <span>C</span>ares</h2>
+  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laboriosam quisquam facere pariatur ratione porro et vero dolore accusamus id?</p>
+        </div>
+  
+        <div class="box">
+            <h2 class="logo"><span>S</span>hare</h2>
+  
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">pinterest</a>
+        </div>
+  
+        <div class="box">
+            <h2 class="logo"><span>L</span>inks</h2>
+  
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">Doctor</a>
+            <a href="#">Review</a>
+            <a href="#">contact</a>
+            <a href="#">blog</a>
+        </div>
+  
+  
+        <h1 class="credit">&copy; 2025 Doctor Cares. all right reserved.</h1>
+    </section>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
